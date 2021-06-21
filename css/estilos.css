@@ -1,0 +1,358 @@
+/*RESET pag*/
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/*no importa el tamaño de la pantalla, no se deformara mi pag, pero aplico esta clase al header, main y footer*/
+/* .container {
+  margin-left: auto;
+  margin-right: auto; 
+  max-width: 1024px; 
+}  */
+
+
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../image/redes.jpg);
+} */
+
+/*formato todas las imagenes*/
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+/*estiro el main tenga o no contenido*/
+/* main {
+  flex-grow: 1;
+} */
+
+
+
+/*CABECERA*/
+/* .header {
+  padding: 2rem;
+  background-color: antiquewhite;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 7rem;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 115%; */
+  /*  border: 1px solid #f00; */
+/* }
+
+.menu a { */
+  /* border: 1px solid #00f; */
+/*   color: flex;
+  padding: 0 1vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  opacity: 0.75;
+} */
+
+/*FOOTER*/
+/* footer {
+  padding: 2rem;
+  background-color: antiquewhite;
+  width: 100%;
+  margin-left: unset;
+  margin-right: unset; */
+/* } */
+
+/*MAIN*/
+
+
+ 
+
+
+ /* _____________________________ */
+ /* HEADER */
+/* ------------------------------ */
+ .header{
+  width: 100%;
+   margin-bottom: 7rem;
+ }
+ .menu_responsive{
+   display: none;
+ }
+ .header-content{
+   position: fixed;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   border:1px solid rgb(200, 255, 0);
+   
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+16,010101+50,0a0a0a+79,0a0a0a+79,4e4e4e+88,383838+93,1b1b1b+100 */
+background: #959595; /* Old browsers */
+background: -moz-linear-gradient(left,  #959595 0%, #0d0d0d 16%, #010101 50%, #0a0a0a 79%, #0a0a0a 79%, #4e4e4e 88%, #383838 93%, #1b1b1b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #959595 0%,#0d0d0d 16%,#010101 50%,#0a0a0a 79%,#0a0a0a 79%,#4e4e4e 88%,#383838 93%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #959595 0%,#0d0d0d 16%,#010101 50%,#0a0a0a 79%,#0a0a0a 79%,#4e4e4e 88%,#383838 93%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 */
+
+
+
+   
+ }
+
+/*  .logo{
+   width: 5rem;
+   margin-top: .3rem;
+   min-width: 8rem;
+ }
+ .logo_empresa{
+   width: 100%;
+ } */
+
+ video{
+   width: 30%;
+   margin-top: .5rem;
+   margin-bottom: -17;
+ }
+  /* BOTONES */
+  .menu{
+    margin-top: 0;
+  }
+ .menu ul{
+   border:1px solid red;
+   width:100%;
+   display: flex;
+   justify-content: space-evenly;
+   list-style:none;
+   color: #0ffc03;
+   /* background: #ff0; */
+   /* margin-right: 10rem; */
+   flex-wrap: wrap;
+   padding: 0;
+ }
+
+ .menu ul li a{
+   position: relative;
+   display: block;
+   margin: 1rem;
+   padding: .5rem;
+  border:2px solid #0ffc03;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #0ffc03;
+  font-size: .8em;
+  overflow: hidden;
+  transition: all 500ms ease;
+  z-index: 0;
+ }
+
+ .menu ul li a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background-color: #fff;
+  opacity: 40%;
+  transition: all 500ms ease;
+  z-index: -1;
+ }
+
+ .btn::before {
+  left: -300px;
+  right: 0;
+  width: 100%;
+  height: 150%;
+  transition: all 750ms ease;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff;
+}
+.btn:hover::before {
+  left: 300px;
+}
+
+
+ .menu_enlace{
+   text-decoration: none;
+ }
+
+
+  /* _____________________________ */
+  /* FOOTER */
+/* ------------------------------ */
+
+ .footer.container{
+  border:1px solid red;
+  width: 100%;
+  
+ }
+ .link_footer{
+  border:1px solid blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #000;
+
+ }
+ .columna_footer{
+  border:1px solid rgb(0, 255, 76);
+  width: 30%;
+  text-align: center;
+  min-width: 300px;
+}
+.columna_footer ul li{
+  list-style: none;
+  line-height: 2rem;
+  color: rgb(0, 255, 76);
+ }
+ small{
+  border:1px solid rgb(255, 0, 140);
+ }
+
+
+ @media only screen and (max-width: 1024px) {
+  .menu_responsive{
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    border: 1px solid red;
+    background: chartreuse;
+  } 
+  .menu ul{
+     display: none;
+   }
+   .video{
+     margin-bottom: 20px;
+   }
+ }
+
+
+
+
+
+
+ 
+/* _____________________________ */
+/*  menu-hamburgesa*/
+/* ------------------------------ */
+/*menu*/
+.panel {
+ 
+  position: fixed; /*encima de todo*/
+  z-index: 998; /*debajo del boton*/
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.85);
+  /*estiramos el panel*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  /*efecto*/
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  /*De arriba*/
+  /* transform: translate(0, -100%); */
+  /*De arriba*/
+  /* transform: translate(0, 100%); */
+  /*Derecha*/
+  /*  transform: translate(100%, 0); */
+  /*Izquierda*/
+  transform: translate(-100%, 0);
+}
+/*El opacity no es necesario, es q quieroq cuando se mueva tambien se oscuresca*/
+/*esta clase se quita y se pone*/
+.panel.is-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.panel-btn {
+  /* display: none; n sirve, hay q usar esto = visibility: hidden;*/
+  /* visibility: hidden; */
+
+  position: fixed;
+  z-index: 999; /*el boton esta encima de todo*/
+  bottom: 94vh; /*abajo*/
+  right: 2vw; /*a la derecha*/
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex; /*estoy colocando las rayitas en el medio*/
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 64, 0.61);
+}
+
+.menu {
+  width: inherit; /*hereda el tamaño de tu contenedor*/
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.menu a {
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: blanchedalmond;
+  transition: all 0.3s ease; /* tiempo q paso la raya sobre los menus */
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: #18171c;
+  background-color: rgba(255, 0, 64, 0.61);
+}
+
+
+/*HOME*/
+/*  #home {
+  background-color: ivory;
+  text-align: center;
+  height: 100vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h1 {
+  margin: 0;
+} */
