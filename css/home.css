@@ -87,7 +87,7 @@ hr{
 .cards-banner-one{
     width: 100%;
     height: 350px;
-    background: url('../image/destacados.jpg')no-repeat center center/cover;
+    background: url('../image/nuevo.jpg')no-repeat center center/cover;
     margin-bottom: 40px;
 }
 
@@ -108,7 +108,7 @@ hr{
 .cards-banner-two{
     width: 100%;
     height: 350px;
-    background: url('../image/nuevo.jpg') no-repeat center center/cover;
+    background: url('../image/mapa.jpg') no-repeat center center/cover;
 }
 
 .cards-banner-two .content{
@@ -121,6 +121,7 @@ hr{
 .social{
     margin: 20px;
     color: #fff;
+	/* border: 1px solid red; */
 }
 
 .social p{
@@ -133,6 +134,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+	object-fit: cover;
 }
 
 .links a{
@@ -143,6 +145,8 @@ hr{
     background: #000;
     align-items: center;
     border-radius: 100%;
+	text-align-last: center;
+	
 }
 
 .links a i{
@@ -150,7 +154,7 @@ hr{
 }
 
 /*Cards Banner Three*/
-.cards-banner-three{
+/*.cards-banner-three{
     width: 100%;
     height: 375px;
     background: url('../image/mapa.jpg') no-repeat center center/cover;
@@ -162,7 +166,7 @@ hr{
     padding: 100px 0 0 30px;
     color: #000;
 }
-
+*/
 /* Cards Banner four*/
 .cards-banner-four{
     width: 100%;
@@ -516,7 +520,7 @@ hr{
 }
 
 /* Cards 4 */
-.taller4{
+/*.taller4{
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -593,9 +597,9 @@ hr{
     display: inline-block;
     font-weight: bold;
 }
-
+*/
 /* Cards 5 */
-.taller5{
+/*.taller5{
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -672,9 +676,9 @@ hr{
     display: inline-block;
     font-weight: bold;
 }
-
+*/
 /* Cards 6 */
-.taller6{
+/*.taller6{
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -751,9 +755,9 @@ hr{
     display: inline-block;
     font-weight: bold;
 }
-
+*/
 /* Cards 7 */
-.taller7{
+/*.taller7{
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -830,6 +834,7 @@ hr{
     display: inline-block;
     font-weight: bold;
 }
+*/
 
 /* Movil */
 @media (max-width: 700px)
