@@ -98,7 +98,9 @@ body {
 
 /*MAIN*/
 
-
+/* .container{
+   max-width: 1300px;
+} */
  
 
 
@@ -106,26 +108,28 @@ body {
 /* HEADER */
 /* ------------------------------ */
  .header{
-  width: 100%;
-  margin-bottom: 18rem;
+  width:100%;
+  /* margin-bottom: 18rem; */
+  height: auto;
+/*   position:fixed; */
+  top: 0;
  }
  
  .header-content{
-   position: fixed;
-   top: 0;
+position: relative;
+   margin-bottom: 4rem;
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
+ /*   align-items: center; */
    width: 100%;
-   border:1px solid rgb(200, 255, 0);
-   height: 280PX;
-   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#959595+0,0d0d0d+9,0d0d0d+11,0d0d0d+11,0d0d0d+12,0d0d0d+12,0d0d0d+12,010101+47,0a0a0a+73,0a0a0a+73,0a0a0a+74,0a0a0a+74,0a0a0a+75,0a0a0a+75,0a0a0a+75,0a0a0a+75,0a0a0a+76,0a0a0a+79,0a0a0a+79,0a0a0a+79,4e4e4e+94,383838+100,1b1b1b+100,383838+101 */
-background: #959595; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #959595 0%, #0d0d0d 9%, #0d0d0d 11%, #0d0d0d 11%, #0d0d0d 12%, #0d0d0d 12%, #0d0d0d 12%, #010101 47%, #0a0a0a 73%, #0a0a0a 73%, #0a0a0a 74%, #0a0a0a 74%, #0a0a0a 75%, #0a0a0a 75%, #0a0a0a 75%, #0a0a0a 75%, #0a0a0a 76%, #0a0a0a 79%, #0a0a0a 79%, #0a0a0a 79%, #4e4e4e 94%, #383838 100%, #1b1b1b 100%, #383838 101%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #959595 0%,#0d0d0d 9%,#0d0d0d 11%,#0d0d0d 11%,#0d0d0d 12%,#0d0d0d 12%,#0d0d0d 12%,#010101 47%,#0a0a0a 73%,#0a0a0a 73%,#0a0a0a 74%,#0a0a0a 74%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 76%,#0a0a0a 79%,#0a0a0a 79%,#0a0a0a 79%,#4e4e4e 94%,#383838 100%,#1b1b1b 100%,#383838 101%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #959595 0%,#0d0d0d 9%,#0d0d0d 11%,#0d0d0d 11%,#0d0d0d 12%,#0d0d0d 12%,#0d0d0d 12%,#010101 47%,#0a0a0a 73%,#0a0a0a 73%,#0a0a0a 74%,#0a0a0a 74%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 76%,#0a0a0a 79%,#0a0a0a 79%,#0a0a0a 79%,#4e4e4e 94%,#383838 100%,#1b1b1b 100%,#383838 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#383838',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  
+
+background: #959595; 
+background: -moz-linear-gradient(-45deg,  #959595 0%, #0d0d0d 9%, #0d0d0d 11%, #0d0d0d 11%, #0d0d0d 12%, #0d0d0d 12%, #0d0d0d 12%, #010101 47%, #0a0a0a 73%, #0a0a0a 73%, #0a0a0a 74%, #0a0a0a 74%, #0a0a0a 75%, #0a0a0a 75%, #0a0a0a 75%, #0a0a0a 75%, #0a0a0a 76%, #0a0a0a 79%, #0a0a0a 79%, #0a0a0a 79%, #4e4e4e 94%, #383838 100%, #1b1b1b 100%, #383838 101%); 
+background: -webkit-linear-gradient(-45deg,  #959595 0%,#0d0d0d 9%,#0d0d0d 11%,#0d0d0d 11%,#0d0d0d 12%,#0d0d0d 12%,#0d0d0d 12%,#010101 47%,#0a0a0a 73%,#0a0a0a 73%,#0a0a0a 74%,#0a0a0a 74%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 76%,#0a0a0a 79%,#0a0a0a 79%,#0a0a0a 79%,#4e4e4e 94%,#383838 100%,#1b1b1b 100%,#383838 101%);
+background: linear-gradient(135deg,  #959595 0%,#0d0d0d 9%,#0d0d0d 11%,#0d0d0d 11%,#0d0d0d 12%,#0d0d0d 12%,#0d0d0d 12%,#010101 47%,#0a0a0a 73%,#0a0a0a 73%,#0a0a0a 74%,#0a0a0a 74%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 75%,#0a0a0a 76%,#0a0a0a 79%,#0a0a0a 79%,#0a0a0a 79%,#4e4e4e 94%,#383838 100%,#1b1b1b 100%,#383838 101%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#383838',GradientType=1 );  
 }
 
 /*  .logo{
@@ -137,17 +141,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
    width: 100%;
  } */
 
- video{
+/*  video{
    width: 25%;
-   margin-top: .5rem;
-   margin-bottom: -17;
+   margin-top: 5rem;
+   min-width: 15rem;
  }
+.contenedorImagen{
+   width: 10rem;
+ margin: 1rem 0 1rem 1rem;
+}
+ .imageLogo{
+    width: 100%;
+ }
+ */
+
   /* BOTONES */
-  .menu{
-    margin-top: 0;
+  .menu_navegador{
+  /*   margin-top: 0; */
+    width: 100%;
+    /* max-width: 1000px; */
+    align-items: flex-start;
+    align-self: center;
+    position: fixed;
+    top: 0;
+    background-color: #18171c;
   }
- .menu ul{
-   border:1px solid red;
+ .menu_navegador_ul{
+   /* border:1px solid red; */
    width:100%;
    display: flex;
    justify-content: space-evenly;
@@ -159,7 +179,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
    padding: 0;
  }
 
- .menu ul li a{
+ .navegador_li .menu_enlace{
    position: relative;
    display: block;
    margin: .1rem;
@@ -175,7 +195,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
   z-index: 0;
  }
 
- .menu ul li a::before{
+ .navegador_li .menu_enlace::before{
   content: "";
   position: absolute;
   left: 0;
@@ -217,7 +237,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
   
  }
  .link_footer{
-  border:1px solid blue;
+  /* border:1px solid blue; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -254,6 +274,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
    .video{
      margin-bottom: 20px;
    }
+   .menu_navegador{
+      display: none;
+   }
  }
 
 
@@ -269,7 +292,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
 .panel {
  
   position: fixed; /*encima de todo*/
-  z-index: 998; /*debajo del boton*/
+  z-index: 900; /*debajo del boton*/
   width: 100%;
   background-color: rgba(34, 34, 34, 0.85);
   /*estiramos el panel*/
@@ -304,8 +327,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
   /* visibility: hidden; */
 
   position: fixed;
-  z-index: 999; /*el boton esta encima de todo*/
-  bottom: 94vh; /*abajo*/
+  z-index: 999 !important; /*el boton esta encima de todo*/
+  bottom: 17vh; /*abajo*/
   right: 2vw; /*a la derecha*/
   width: 3rem;
   height: 3rem;
@@ -314,7 +337,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
   display: flex; /*estoy colocando las rayitas en el medio*/
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 0, 64, 0.61);
+  background-color: rgba(0, 50, 0, 0.61) !important;
 }
 
 .menu {
@@ -325,6 +348,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
   align-items: center;
   text-align: center;
   padding-top: 3rem;
+
 }
 
 .menu a {
@@ -356,6 +380,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
 h1 {
   margin: 0;
 } */
+
+/* _____________________________ */
+/*  end-menu-hamburgesa*/
+/* ------------------------------ */
+
 
 .disenadores{
     width: 100%;

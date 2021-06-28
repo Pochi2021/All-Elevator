@@ -30,7 +30,7 @@ const getHTML = (options) => {
 //cunado cargue el  enlace ya no tiene q llevar a ese archivo (no mas esto = http://127.0.0.1:5500/ajax-ejercicios/assets/home.html), sino traerme el contenido HTML q se encuentra en el, durante la carga del documento
 d.addEventListener("DOMContentLoaded", (e) => {
   getHTML({//objeto opciones, de la function q hice arriba
-    url: "../paginas/home.html",
+    url: "./paginas/home.html",
     success: (html) => $main.innerHTML = html,//en el contenedor main, agregame el contenido del html q estoy trayendo
     error: (err) => $main.innerHTML = `<h1>${err}</h1>`,
   });
@@ -38,7 +38,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
 //LOS DEMAS ENLACES
 d.addEventListener("click", (e) => {
-  if (e.target.matches(".menu a")) {//coincida con los enlacs del menu
+  if (e.target.matches(".menu_enlace")) {//coincida con los enlacs del menu
     e.preventDefault(); //freno todos los enlaces
     getHTML({
       url: e.target.href, //los elemntos q estan en el enlace
