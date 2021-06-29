@@ -116,7 +116,7 @@ body {
  }
  
  .header-content{
-position: relative;
+  position: relative;
    margin-bottom: 4rem;
    display: flex;
    flex-direction: column;
