@@ -1,5 +1,7 @@
 @import url(home.css);
 @import url(gallery.css);
+@import url(contacto.css);
+
 /*RESET pag*/
 html {
   box-sizing: border-box;
@@ -401,5 +403,32 @@ h1 {
     flex-direction: column;
     align-items: center;
     Color: #fff;
+}
+
+
+
+#boton-enviar{
+  /*background: #31384a;
+  color: #fff;
+  padding: 20px;*/
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #242324;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+}
+
+boton-enviar:hover{
+  cursor: pointer;
+}
+
+@media (max-width:480px){
+  form{
+  width: 100%;
+  }
 }
 
